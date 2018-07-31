@@ -111,24 +111,24 @@ public class GamepadController extends TankController {
 	
 	public boolean generalPovClicked(int index, int direction) {
 		if (direction == 1) {
-			return controllers.get(index).getPov(index).equals(PovDirection.values()[1]) ||
-					 controllers.get(index).getPov(index).equals(PovDirection.values()[5]) ||
-					 controllers.get(index).getPov(index).equals(PovDirection.values()[7]);
+			return controllers.get(this.index).getPov(index).equals(PovDirection.values()[1]) ||
+					 controllers.get(this.index).getPov(index).equals(PovDirection.values()[5]) ||
+					 controllers.get(this.index).getPov(index).equals(PovDirection.values()[7]);
 		}
 		if (direction == 2) {
-			return controllers.get(index).getPov(index).equals(PovDirection.values()[2]) ||
-					 controllers.get(index).getPov(index).equals(PovDirection.values()[6]) ||
-					 controllers.get(index).getPov(index).equals(PovDirection.values()[8]);
+			return controllers.get(this.index).getPov(index).equals(PovDirection.values()[2]) ||
+					 controllers.get(this.index).getPov(index).equals(PovDirection.values()[6]) ||
+					 controllers.get(this.index).getPov(index).equals(PovDirection.values()[8]);
 		}
 		if (direction == 3) {
-			return controllers.get(index).getPov(index).equals(PovDirection.values()[3]) ||
-					 controllers.get(index).getPov(index).equals(PovDirection.values()[5]) ||
-					 controllers.get(index).getPov(index).equals(PovDirection.values()[6]);
+			return controllers.get(this.index).getPov(index).equals(PovDirection.values()[3]) ||
+					 controllers.get(this.index).getPov(index).equals(PovDirection.values()[5]) ||
+					 controllers.get(this.index).getPov(index).equals(PovDirection.values()[6]);
 		}
 		if (direction == 4) {
-			return controllers.get(index).getPov(index).equals(PovDirection.values()[4]) ||
-					 controllers.get(index).getPov(index).equals(PovDirection.values()[7]) ||
-					 controllers.get(index).getPov(index).equals(PovDirection.values()[8]);
+			return controllers.get(this.index).getPov(index).equals(PovDirection.values()[4]) ||
+					 controllers.get(this.index).getPov(index).equals(PovDirection.values()[7]) ||
+					 controllers.get(this.index).getPov(index).equals(PovDirection.values()[8]);
 		}
 		return false;
 	}
